@@ -114,11 +114,11 @@
   transform: translateX(-50%) translateY(-50%) scale(0.9);
 }
 
-#larrow{
+#rarrow{
  top:90px;
  left:55%;
 }
-#rarrow{
+#larrow{
  top:65px;
  left:5%;
  transform: scaleX(-1);
