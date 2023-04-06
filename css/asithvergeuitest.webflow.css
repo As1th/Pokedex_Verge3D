@@ -163,8 +163,33 @@ left:9.5%;
  font-weight: 700;
  letter-spacing: 0.3em;
  z-index: 20;
- transition: all 0.3s ease-in-out;
+ 
 }
 
+.data {
+ position: absolute;
+ display:flex;
+ margin-left: -12.6%;
+ margin-top: -10.8%;
+ width: 26%;
+ height: 44%;
+ border-radius: 30px;
+ background: rgba(0,0,0,0.1);
+text-align: center;
+ text-decoration: none;
 
+ align-items:center;
+ padding: 18px 25px;
+ color: #fff;
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+ letter-spacing: 0.01em;
+ text-transform: uppercase;
+ z-index: 20;
+ font-size: 1.5vw;
+line-height: 1.2; /* Increase the line spacing to 1.5 */
+ overflow-wrap:normal;
+color: hsl(195, 100%, 90%);
+}
 
