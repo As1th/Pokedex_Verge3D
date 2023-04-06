@@ -1143,7 +1143,7 @@
                                           <next>
                                             <block type="animateParam" id="O^X+U2}vX?oxLCmOxbCw">
                                               <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="true"></mutation>
-                                              <field name="EASING">Cubic</field>
+                                              <field name="EASING">Linear</field>
                                               <field name="EASING2">Out</field>
                                               <field name="YOYO">FALSE</field>
                                               <value name="FROM">
