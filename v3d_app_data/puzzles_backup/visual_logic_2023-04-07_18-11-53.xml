@@ -60,7 +60,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="1746.9460343723786" scrolly="-1552.708074599952" scale="0.7959893115433262">
+  <tab name="main" type="MainTab" active="true" scrollx="1788.445457410241" scrolly="-2436.871088436415" scale="0.9675299831141103">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="=)U#]viE]g$N~vj~M7o.">species_list</variable>
       <variable id="JG.$=]d4@g=1le!%i[Vx">i</variable>
@@ -76,7 +76,6 @@
       <variable id="IB0/d*zzFDC{?kOH4N1R">set_cam</variable>
       <variable id="K{^,Q{,@_k`*7tlR#ng!">cam_x</variable>
       <variable id=")5WzNLZN/h~bGQ38~Sm/">current_species_name</variable>
-      <variable id="UKj.AG#b!!B@Dm1!B0J.">current_species_desc</variable>
       <variable id="QrX`ksuY_5l{|Z7`BD7i">cam_start_pos</variable>
     </variables>
     <block xmlns="https://developers.google.com/blockly/xml" type="comment" id="f^(H[Q#C@PJ-OOBeC6!#" x="-330" y="-510">
@@ -810,127 +809,89 @@
                                     </block>
                                   </value>
                                   <next>
-                                    <block type="variables_set" id="%[;KYxL8Dw~@}TieIx!k">
-                                      <field name="VAR" id="UKj.AG#b!!B@Dm1!B0J.">current_species_desc</field>
+                                    <block type="setHTMLElemAttribute" id="~cnSfxKZ6a3ED,n5bY2K">
+                                      <field name="ATTRIBUTE">innerHTML</field>
+                                      <field name="PARENT">TRUE</field>
                                       <value name="VALUE">
-                                        <block type="lists_getIndex" id=":EF{6-z94{$,Y_5Pjr)Q">
-                                          <mutation statement="false" at="true"></mutation>
-                                          <field name="MODE">GET</field>
-                                          <field name="WHERE">FROM_START</field>
-                                          <value name="VALUE">
-                                            <block type="variables_get" id="vTrW+vhc5nhta2~5z8Ol">
-                                              <field name="VAR" id="#!q|YVMgP2=wpV)}%!4U">current_species_data</field>
-                                            </block>
-                                          </value>
-                                          <value name="AT">
-                                            <block type="math_number" id="WtKX?*%]uryEBk:=y#%u">
-                                              <field name="NUM">1</field>
-                                            </block>
-                                          </value>
+                                        <block type="variables_get" id="}BxMJFm-7j9@73E`t1tA">
+                                          <field name="VAR" id=")5WzNLZN/h~bGQ38~Sm/">current_species_name</field>
                                         </block>
                                       </value>
+                                      <value name="ID">
+                                        <shadow type="text" id="E8)u3?H0hF=16hd6]4L}">
+                                          <field name="TEXT">_speciesName</field>
+                                        </shadow>
+                                      </value>
                                       <next>
-                                        <block type="setHTMLElemAttribute" id="~cnSfxKZ6a3ED,n5bY2K">
-                                          <field name="ATTRIBUTE">innerHTML</field>
-                                          <field name="PARENT">TRUE</field>
-                                          <value name="VALUE">
-                                            <block type="variables_get" id="}BxMJFm-7j9@73E`t1tA">
-                                              <field name="VAR" id=")5WzNLZN/h~bGQ38~Sm/">current_species_name</field>
+                                        <block type="setObjTransform" id="dw;Z5sfTZB6v5Y][6Z2$">
+                                          <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                                          <field name="MODE">position</field>
+                                          <field name="OFFSET">FALSE</field>
+                                          <value name="TARGETOBJ">
+                                            <shadow type="objectList" id="*E|y*pB?@::e/w4FI*5C">
+                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                            </shadow>
+                                            <block type="variables_get" id="^v.QJnU]rRU;PLQHJFK~">
+                                              <field name="VAR" id="X$1QcU#tIDjy[Cr}@.]F">current_species_model</field>
                                             </block>
                                           </value>
-                                          <value name="ID">
-                                            <shadow type="text" id="E8)u3?H0hF=16hd6]4L}">
-                                              <field name="TEXT">_speciesName</field>
-                                            </shadow>
+                                          <value name="X">
+                                            <block type="math_number" id="~P1hU6qdT8y7AgmT+}+s">
+                                              <field name="NUM">0</field>
+                                            </block>
+                                          </value>
+                                          <value name="Y">
+                                            <block type="math_number" id="n^(OupttC`,3^Cg%4W$W">
+                                              <field name="NUM">0</field>
+                                            </block>
+                                          </value>
+                                          <value name="Z">
+                                            <block type="math_number" id="bpOt)]nI}2a@Fy`[8(sx">
+                                              <field name="NUM">0</field>
+                                            </block>
                                           </value>
                                           <next>
-                                            <block type="setHTMLElemAttribute" id="74n2X:EKH~6^I_CPUe]Q">
-                                              <field name="ATTRIBUTE">innerHTML</field>
-                                              <field name="PARENT">TRUE</field>
-                                              <value name="VALUE">
-                                                <block type="variables_get" id="28ZE[]u_.ow;$5rU9}P8">
-                                                  <field name="VAR" id="UKj.AG#b!!B@Dm1!B0J.">current_species_desc</field>
+                                            <block type="animateParam" id="A4SsuQt1Fe*x0ycK1oRp">
+                                              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="true"></mutation>
+                                              <field name="EASING">Cubic</field>
+                                              <field name="EASING2">Out</field>
+                                              <field name="YOYO">FALSE</field>
+                                              <value name="FROM">
+                                                <block type="math_number" id="uT)iC|0m60/zRp=T(z%?">
+                                                  <field name="NUM">0</field>
                                                 </block>
                                               </value>
-                                              <value name="ID">
-                                                <shadow type="text" id="q,TSl$Y`Nb|d0FZ/iH|W">
-                                                  <field name="TEXT">_data</field>
-                                                </shadow>
+                                              <value name="TO">
+                                                <block type="math_number" id="`7Mv}sh+Iry=rpK1|GmB">
+                                                  <field name="NUM">1</field>
+                                                </block>
                                               </value>
-                                              <next>
-                                                <block type="setObjTransform" id="dw;Z5sfTZB6v5Y][6Z2$">
+                                              <value name="DURATION">
+                                                <block type="math_number" id="O-o+?$DD)Scu@+%UAO[K">
+                                                  <field name="NUM">0.2</field>
+                                                </block>
+                                              </value>
+                                              <statement name="ON_UPDATE">
+                                                <block type="setObjTransform" id="g?rzh?CerSb=i=|?Ytj%">
                                                   <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
-                                                  <field name="MODE">position</field>
+                                                  <field name="MODE">scale</field>
                                                   <field name="OFFSET">FALSE</field>
                                                   <value name="TARGETOBJ">
-                                                    <shadow type="objectList" id="*E|y*pB?@::e/w4FI*5C">
-                                                      <field name="FIELDNAME">&lt;none&gt;</field>
-                                                    </shadow>
-                                                    <block type="variables_get" id="^v.QJnU]rRU;PLQHJFK~">
+                                                    <block type="variables_get" id="kGm}wAB$XAkeG*R*Cvs$">
                                                       <field name="VAR" id="X$1QcU#tIDjy[Cr}@.]F">current_species_model</field>
                                                     </block>
                                                   </value>
                                                   <value name="X">
-                                                    <block type="math_number" id="~P1hU6qdT8y7AgmT+}+s">
-                                                      <field name="NUM">0</field>
-                                                    </block>
+                                                    <block type="animateParamUpdate" id="gAcV=*}pP;4rqkrV!1/("></block>
                                                   </value>
                                                   <value name="Y">
-                                                    <block type="math_number" id="n^(OupttC`,3^Cg%4W$W">
-                                                      <field name="NUM">0</field>
-                                                    </block>
+                                                    <block type="animateParamUpdate" id="d`!]/9WyG7XFm3]QXRJO"></block>
                                                   </value>
                                                   <value name="Z">
-                                                    <block type="math_number" id="bpOt)]nI}2a@Fy`[8(sx">
-                                                      <field name="NUM">0</field>
-                                                    </block>
+                                                    <block type="animateParamUpdate" id="lAK@:Ky##8AuqPFGSN?T"></block>
                                                   </value>
-                                                  <next>
-                                                    <block type="animateParam" id="A4SsuQt1Fe*x0ycK1oRp">
-                                                      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="true"></mutation>
-                                                      <field name="EASING">Cubic</field>
-                                                      <field name="EASING2">Out</field>
-                                                      <field name="YOYO">FALSE</field>
-                                                      <value name="FROM">
-                                                        <block type="math_number" id="uT)iC|0m60/zRp=T(z%?">
-                                                          <field name="NUM">0</field>
-                                                        </block>
-                                                      </value>
-                                                      <value name="TO">
-                                                        <block type="math_number" id="`7Mv}sh+Iry=rpK1|GmB">
-                                                          <field name="NUM">1</field>
-                                                        </block>
-                                                      </value>
-                                                      <value name="DURATION">
-                                                        <block type="math_number" id="O-o+?$DD)Scu@+%UAO[K">
-                                                          <field name="NUM">0.2</field>
-                                                        </block>
-                                                      </value>
-                                                      <statement name="ON_UPDATE">
-                                                        <block type="setObjTransform" id="g?rzh?CerSb=i=|?Ytj%">
-                                                          <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
-                                                          <field name="MODE">scale</field>
-                                                          <field name="OFFSET">FALSE</field>
-                                                          <value name="TARGETOBJ">
-                                                            <block type="variables_get" id="kGm}wAB$XAkeG*R*Cvs$">
-                                                              <field name="VAR" id="X$1QcU#tIDjy[Cr}@.]F">current_species_model</field>
-                                                            </block>
-                                                          </value>
-                                                          <value name="X">
-                                                            <block type="animateParamUpdate" id="gAcV=*}pP;4rqkrV!1/("></block>
-                                                          </value>
-                                                          <value name="Y">
-                                                            <block type="animateParamUpdate" id="d`!]/9WyG7XFm3]QXRJO"></block>
-                                                          </value>
-                                                          <value name="Z">
-                                                            <block type="animateParamUpdate" id="lAK@:Ky##8AuqPFGSN?T"></block>
-                                                          </value>
-                                                        </block>
-                                                      </statement>
-                                                    </block>
-                                                  </next>
                                                 </block>
-                                              </next>
+                                              </statement>
                                             </block>
                                           </next>
                                         </block>
@@ -1138,127 +1099,89 @@
                                     </block>
                                   </value>
                                   <next>
-                                    <block type="variables_set" id="{{A{YUJ6^~9R0M2P=N7_">
-                                      <field name="VAR" id="UKj.AG#b!!B@Dm1!B0J.">current_species_desc</field>
+                                    <block type="setHTMLElemAttribute" id="1kqEl?]^/TIm-`5:Z*Z(">
+                                      <field name="ATTRIBUTE">innerHTML</field>
+                                      <field name="PARENT">TRUE</field>
                                       <value name="VALUE">
-                                        <block type="lists_getIndex" id="?pO7joReW=w]9oaUb.}?">
-                                          <mutation statement="false" at="true"></mutation>
-                                          <field name="MODE">GET</field>
-                                          <field name="WHERE">FROM_START</field>
-                                          <value name="VALUE">
-                                            <block type="variables_get" id="s@|DUOzdV(`tN}+W[JSS">
-                                              <field name="VAR" id="#!q|YVMgP2=wpV)}%!4U">current_species_data</field>
-                                            </block>
-                                          </value>
-                                          <value name="AT">
-                                            <block type="math_number" id="GDNd-(.)x~I|b{1[)dcx">
-                                              <field name="NUM">1</field>
-                                            </block>
-                                          </value>
+                                        <block type="variables_get" id="^H0BQ!em_*NV9w@ILqsC">
+                                          <field name="VAR" id=")5WzNLZN/h~bGQ38~Sm/">current_species_name</field>
                                         </block>
                                       </value>
+                                      <value name="ID">
+                                        <shadow type="text" id="MY+2UEF|4_v/JR,I4YTa">
+                                          <field name="TEXT">_speciesName</field>
+                                        </shadow>
+                                      </value>
                                       <next>
-                                        <block type="setHTMLElemAttribute" id="1kqEl?]^/TIm-`5:Z*Z(">
-                                          <field name="ATTRIBUTE">innerHTML</field>
-                                          <field name="PARENT">TRUE</field>
-                                          <value name="VALUE">
-                                            <block type="variables_get" id="^H0BQ!em_*NV9w@ILqsC">
-                                              <field name="VAR" id=")5WzNLZN/h~bGQ38~Sm/">current_species_name</field>
+                                        <block type="setObjTransform" id="w$-6YNhB[8FA2sVP{lo!">
+                                          <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                                          <field name="MODE">position</field>
+                                          <field name="OFFSET">FALSE</field>
+                                          <value name="TARGETOBJ">
+                                            <shadow type="objectList" id="f_pwEeO!$Ok9_:5+_q1E">
+                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                            </shadow>
+                                            <block type="variables_get" id="V}rfl!v0~7sx7`s3Y=gt">
+                                              <field name="VAR" id="X$1QcU#tIDjy[Cr}@.]F">current_species_model</field>
                                             </block>
                                           </value>
-                                          <value name="ID">
-                                            <shadow type="text" id="MY+2UEF|4_v/JR,I4YTa">
-                                              <field name="TEXT">_speciesName</field>
-                                            </shadow>
+                                          <value name="X">
+                                            <block type="math_number" id="#374WfC6;u*RqTC%p2q5">
+                                              <field name="NUM">0</field>
+                                            </block>
+                                          </value>
+                                          <value name="Y">
+                                            <block type="math_number" id="`c49;ZhZ-:k9~Bk4-(+s">
+                                              <field name="NUM">0</field>
+                                            </block>
+                                          </value>
+                                          <value name="Z">
+                                            <block type="math_number" id="T@Y5`VEnTcC%)oL8p-e-">
+                                              <field name="NUM">0</field>
+                                            </block>
                                           </value>
                                           <next>
-                                            <block type="setHTMLElemAttribute" id="}bk4V#XymYs]oX#!+f*^">
-                                              <field name="ATTRIBUTE">innerHTML</field>
-                                              <field name="PARENT">TRUE</field>
-                                              <value name="VALUE">
-                                                <block type="variables_get" id="t!*02]1#QdT6o0PNxB{Q">
-                                                  <field name="VAR" id="UKj.AG#b!!B@Dm1!B0J.">current_species_desc</field>
+                                            <block type="animateParam" id="O^X+U2}vX?oxLCmOxbCw">
+                                              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="true"></mutation>
+                                              <field name="EASING">Cubic</field>
+                                              <field name="EASING2">Out</field>
+                                              <field name="YOYO">FALSE</field>
+                                              <value name="FROM">
+                                                <block type="math_number" id="C2f{`CeKC`F)m-9t(oM(">
+                                                  <field name="NUM">0</field>
                                                 </block>
                                               </value>
-                                              <value name="ID">
-                                                <shadow type="text" id="0+@g:Y02lCtvG2Ncgh$d">
-                                                  <field name="TEXT">_data</field>
-                                                </shadow>
+                                              <value name="TO">
+                                                <block type="math_number" id=",393qEC^z|@:B?Hppts:">
+                                                  <field name="NUM">1</field>
+                                                </block>
                                               </value>
-                                              <next>
-                                                <block type="setObjTransform" id="w$-6YNhB[8FA2sVP{lo!">
+                                              <value name="DURATION">
+                                                <block type="math_number" id="@=j:OVr,-s;2kKADfyr,">
+                                                  <field name="NUM">0.2</field>
+                                                </block>
+                                              </value>
+                                              <statement name="ON_UPDATE">
+                                                <block type="setObjTransform" id="%.z;)G$Az{|P|AhB$T,C">
                                                   <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
-                                                  <field name="MODE">position</field>
+                                                  <field name="MODE">scale</field>
                                                   <field name="OFFSET">FALSE</field>
                                                   <value name="TARGETOBJ">
-                                                    <shadow type="objectList" id="f_pwEeO!$Ok9_:5+_q1E">
-                                                      <field name="FIELDNAME">&lt;none&gt;</field>
-                                                    </shadow>
-                                                    <block type="variables_get" id="V}rfl!v0~7sx7`s3Y=gt">
+                                                    <block type="variables_get" id="u6~xZ+N5FQTt:1V1Uyi!">
                                                       <field name="VAR" id="X$1QcU#tIDjy[Cr}@.]F">current_species_model</field>
                                                     </block>
                                                   </value>
                                                   <value name="X">
-                                                    <block type="math_number" id="#374WfC6;u*RqTC%p2q5">
-                                                      <field name="NUM">0</field>
-                                                    </block>
+                                                    <block type="animateParamUpdate" id="F8.V2:G:GCevNe4Xk!OA"></block>
                                                   </value>
                                                   <value name="Y">
-                                                    <block type="math_number" id="`c49;ZhZ-:k9~Bk4-(+s">
-                                                      <field name="NUM">0</field>
-                                                    </block>
+                                                    <block type="animateParamUpdate" id="2s!4YjweE^n,4q7WXh9?"></block>
                                                   </value>
                                                   <value name="Z">
-                                                    <block type="math_number" id="T@Y5`VEnTcC%)oL8p-e-">
-                                                      <field name="NUM">0</field>
-                                                    </block>
+                                                    <block type="animateParamUpdate" id=":7^ZTr%~;)mm^633;z#%"></block>
                                                   </value>
-                                                  <next>
-                                                    <block type="animateParam" id="O^X+U2}vX?oxLCmOxbCw">
-                                                      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="true"></mutation>
-                                                      <field name="EASING">Cubic</field>
-                                                      <field name="EASING2">Out</field>
-                                                      <field name="YOYO">FALSE</field>
-                                                      <value name="FROM">
-                                                        <block type="math_number" id="C2f{`CeKC`F)m-9t(oM(">
-                                                          <field name="NUM">0</field>
-                                                        </block>
-                                                      </value>
-                                                      <value name="TO">
-                                                        <block type="math_number" id=",393qEC^z|@:B?Hppts:">
-                                                          <field name="NUM">1</field>
-                                                        </block>
-                                                      </value>
-                                                      <value name="DURATION">
-                                                        <block type="math_number" id="@=j:OVr,-s;2kKADfyr,">
-                                                          <field name="NUM">0.2</field>
-                                                        </block>
-                                                      </value>
-                                                      <statement name="ON_UPDATE">
-                                                        <block type="setObjTransform" id="%.z;)G$Az{|P|AhB$T,C">
-                                                          <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
-                                                          <field name="MODE">scale</field>
-                                                          <field name="OFFSET">FALSE</field>
-                                                          <value name="TARGETOBJ">
-                                                            <block type="variables_get" id="u6~xZ+N5FQTt:1V1Uyi!">
-                                                              <field name="VAR" id="X$1QcU#tIDjy[Cr}@.]F">current_species_model</field>
-                                                            </block>
-                                                          </value>
-                                                          <value name="X">
-                                                            <block type="animateParamUpdate" id="F8.V2:G:GCevNe4Xk!OA"></block>
-                                                          </value>
-                                                          <value name="Y">
-                                                            <block type="animateParamUpdate" id="2s!4YjweE^n,4q7WXh9?"></block>
-                                                          </value>
-                                                          <value name="Z">
-                                                            <block type="animateParamUpdate" id=":7^ZTr%~;)mm^633;z#%"></block>
-                                                          </value>
-                                                        </block>
-                                                      </statement>
-                                                    </block>
-                                                  </next>
                                                 </block>
-                                              </next>
+                                              </statement>
                                             </block>
                                           </next>
                                         </block>
@@ -1283,7 +1206,7 @@
     <block xmlns="https://developers.google.com/blockly/xml" type="text" id="vg{03i|@7OyQ29m}#|o," x="-1240" y="1117">
       <field name="TEXT">Hello, Verge!</field>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="KzgDu%92Hi[+XXBG@;*%" x="-1790" y="1390">
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="KzgDu%92Hi[+XXBG@;*%" x="-1770" y="1270">
       <field name="VAR" id="=)U#]viE]g$N~vj~M7o.">species_list</field>
       <value name="VALUE">
         <block type="lists_create_with" id="?`=#WNi~It5j8Sid]HHE">
@@ -1299,7 +1222,7 @@
               <value name="ADD1">
                 <block type="textMultiline" id="L5(EbJ7oLg.ZZg?MGRvx">
                   <field name="HIGHLIGHT_MODE">text</field>
-                  <field name="TEXT" editor-height="3" editor-width="200">Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.</field>
+                  <field name="TEXT" editor-height="3" editor-width="200">This is&amp;#10;multi-line&amp;#10;text</field>
                 </block>
               </value>
               <value name="ADD2">
@@ -1320,7 +1243,7 @@
               <value name="ADD1">
                 <block type="textMultiline" id="rDSfJD/EkFK;:sfygbu7">
                   <field name="HIGHLIGHT_MODE">text</field>
-                  <field name="TEXT" editor-height="3" editor-width="200">There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.</field>
+                  <field name="TEXT" editor-height="3" editor-width="200">This is&amp;#10;multi-line&amp;#10;text2</field>
                 </block>
               </value>
               <value name="ADD2">
@@ -1341,7 +1264,7 @@
               <value name="ADD1">
                 <block type="textMultiline" id="yX,yDzurd10oHiSlIAo!">
                   <field name="HIGHLIGHT_MODE">text</field>
-                  <field name="TEXT" editor-height="3" editor-width="200">There is a large flower on Venusaur's back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower's aroma soothes the emotions of people.</field>
+                  <field name="TEXT" editor-height="3" editor-width="200">This is&amp;#10;multi-line&amp;#10;text3</field>
                 </block>
               </value>
               <value name="ADD2">
@@ -1362,7 +1285,7 @@
               <value name="ADD1">
                 <block type="textMultiline" id="KbejC],FO?osbN3m/|BW">
                   <field name="HIGHLIGHT_MODE">text</field>
-                  <field name="TEXT" editor-height="3" editor-width="200">The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.</field>
+                  <field name="TEXT" editor-height="3" editor-width="200">This is&amp;#10;multi-line&amp;#10;text3</field>
                 </block>
               </value>
               <value name="ADD2">
@@ -1383,7 +1306,7 @@
               <value name="ADD1">
                 <block type="textMultiline" id="X0{myLTWZzE#_FeZchvD">
                   <field name="HIGHLIGHT_MODE">text</field>
-                  <field name="TEXT" editor-height="3" editor-width="200">	Charmeleon mercilessly destroys its foes using its sharp claws. If it encounters a strong foe, it turns aggressive. In this excited state, the flame at the tip of its tail flares with a bluish white color.</field>
+                  <field name="TEXT" editor-height="3" editor-width="200">This is&amp;#10;multi-line&amp;#10;text3</field>
                 </block>
               </value>
               <value name="ADD2">
@@ -1404,7 +1327,7 @@
               <value name="ADD1">
                 <block type="textMultiline" id="x9+=QByfDQ8BX]fl}f-Y">
                   <field name="HIGHLIGHT_MODE">text</field>
-                  <field name="TEXT" editor-height="3" editor-width="200">Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.</field>
+                  <field name="TEXT" editor-height="3" editor-width="200">This is&amp;#10;multi-line&amp;#10;text3</field>
                 </block>
               </value>
               <value name="ADD2">
@@ -1425,7 +1348,7 @@
               <value name="ADD1">
                 <block type="textMultiline" id="{;2-}R6GD]=v(:IRt+%k">
                   <field name="HIGHLIGHT_MODE">text</field>
-                  <field name="TEXT" editor-height="3" editor-width="200">Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds.</field>
+                  <field name="TEXT" editor-height="3" editor-width="200">This is&amp;#10;multi-line&amp;#10;text3</field>
                 </block>
               </value>
               <value name="ADD2">
@@ -1446,7 +1369,7 @@
               <value name="ADD1">
                 <block type="textMultiline" id="-wB/(4/.4;^}yoWm@s?~">
                   <field name="HIGHLIGHT_MODE">text</field>
-                  <field name="TEXT" editor-height="2" editor-width="200">Its tail is large and covered with a rich, thick fur. The tail becomes increasingly deeper in color as Wartortle ages. The scratches on its shell are evidence of this Pokémon's toughness as a battler.</field>
+                  <field name="TEXT" editor-height="3" editor-width="200">This is&amp;#10;multi-line&amp;#10;text3</field>
                 </block>
               </value>
               <value name="ADD2">
@@ -1467,7 +1390,7 @@
               <value name="ADD1">
                 <block type="textMultiline" id="Kj7:%feaQGeflO/O*pQ}">
                   <field name="HIGHLIGHT_MODE">text</field>
-                  <field name="TEXT" editor-height="3" editor-width="200">Blastoise has water spouts that protrude from its shell. The water spouts are very accurate. They can shoot bullets of water with enough accuracy to strike empty cans from a distance of over 160 feet.</field>
+                  <field name="TEXT" editor-height="3" editor-width="200">This is&amp;#10;multi-line&amp;#10;text3</field>
                 </block>
               </value>
               <value name="ADD2">
