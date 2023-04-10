@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="init" type="InitTab" active="false" scrollx="254.53654986961237" scrolly="245.01497377088458" scale="0.5525219281866832">
+  <tab name="init" type="InitTab" active="true" scrollx="25.076307482926723" scrolly="-317.6410000000001" scale="0.99225">
     <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="Um@3g~6CQ[nu%a}jPbu8" x="90" y="70">
       <field name="LOAD_COMP_ASSETS">FALSE</field>
       <field name="FULLSCREEN">FALSE</field>
@@ -34,33 +34,23 @@
       </statement>
       <statement name="DO_END">
         <block type="setHTMLElemStyle" id="@9weg~dbIcsK%57ga*yp">
-          <field name="PROPERTY">width</field>
+          <field name="PROPERTY">display</field>
           <field name="PARENT">FALSE</field>
           <value name="VALUE">
-            <block type="text_join" id="[P[A/*m!UsKxk=!q^:3E">
-              <mutation items="2"></mutation>
-              <value name="ADD0">
-                <block type="math_number" id=";2ZuKTBdqv^q]1)e+DoB">
-                  <field name="NUM">0</field>
-                </block>
-              </value>
-              <value name="ADD1">
-                <block type="text" id="XnVRyM$VXFJI-34]P^xl">
-                  <field name="TEXT">%</field>
-                </block>
-              </value>
+            <block type="text" id="D[%Y]X~ZJ[dnxM!QZ:Y0">
+              <field name="TEXT">none</field>
             </block>
           </value>
           <value name="ID">
             <shadow type="text" id="G[r6d1SBtibxOM`D|Lk0">
-              <field name="TEXT">pre_loader</field>
+              <field name="TEXT">_loader</field>
             </shadow>
           </value>
         </block>
       </statement>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="1746.9460343723786" scrolly="-1552.708074599952" scale="0.7959893115433262">
+  <tab name="main" type="MainTab" active="false" scrollx="835.3826504496926" scrolly="-394.5791421982824" scale="0.3">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="=)U#]viE]g$N~vj~M7o.">species_list</variable>
       <variable id="JG.$=]d4@g=1le!%i[Vx">i</variable>
@@ -624,7 +614,7 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="/3Ps{owI%USzU`Y_I)l." x="-1670" y="10">
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="/3Ps{owI%USzU`Y_I)l." x="-1690" y="-50">
       <field name="NAME">decrement_species</field>
       <comment pinned="false" h="80" w="160">Describe this function...</comment>
       <statement name="STACK">
