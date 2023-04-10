@@ -48,7 +48,7 @@
       </value>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="1292.0604100806713" scrolly="52.339106981827456" scale="0.5939794798318193">
+  <tab name="main" type="MainTab" active="true" scrollx="1264.038128456681" scrolly="-67.10689214244087" scale="0.6139132535407591">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="=)U#]viE]g$N~vj~M7o.">species_list</variable>
       <variable id="JG.$=]d4@g=1le!%i[Vx">i</variable>
@@ -1032,11 +1032,24 @@
                             </block>
                           </value>
                           <value name="B">
-                            <block type="lists_length" id="?k9[_cmvIlSvBlCM]$,g">
-                              <value name="VALUE">
-                                <block type="variables_get" id="5?I1]K~4MaB[b(8WzB2P">
-                                  <field name="VAR" id="=)U#]viE]g$N~vj~M7o.">species_list</field>
+                            <block type="math_arithmetic" id="m68n95Iov,#KO`o0%iP?">
+                              <field name="OP">MINUS</field>
+                              <value name="A">
+                                <shadow type="math_number" id=":*GNUsp4G=msHS1[!Lh6">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                                <block type="lists_length" id="?k9[_cmvIlSvBlCM]$,g">
+                                  <value name="VALUE">
+                                    <block type="variables_get" id="5?I1]K~4MaB[b(8WzB2P">
+                                      <field name="VAR" id="=)U#]viE]g$N~vj~M7o.">species_list</field>
+                                    </block>
+                                  </value>
                                 </block>
+                              </value>
+                              <value name="B">
+                                <shadow type="math_number" id="b[Z9@2HI,8.4m`UjKNQ`">
+                                  <field name="NUM">0</field>
+                                </shadow>
                               </value>
                             </block>
                           </value>
